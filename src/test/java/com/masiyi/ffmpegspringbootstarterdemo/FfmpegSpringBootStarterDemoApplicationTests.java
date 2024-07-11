@@ -15,4 +15,8 @@ class FfmpegSpringBootStarterDemoApplicationTests {
         ffmpegTemplate.convert("D:\\video.mp4","D:\\video.avi");
     }
 
+    @Test
+    void extractAudio() {
+        System.out.println(ffmpegTemplate.extractAudio("D:\\video.mp4"));
+    }
 }
