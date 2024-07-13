@@ -44,10 +44,6 @@ class FfmpegSpringBootStarterDemoApplicationTests {
         ffmpegTemplate.cut("D:\\video.mp4","D:\\video111.mp4",100,100,640,480);
     }
 
-    @Test
-    void setVideoPreview() {
-        ffmpegTemplate.setVideoPreview("D:\\video.mp4","D:\\video1211.mp4");
-    }
 
     @Test
     void embedSubtitle() {
