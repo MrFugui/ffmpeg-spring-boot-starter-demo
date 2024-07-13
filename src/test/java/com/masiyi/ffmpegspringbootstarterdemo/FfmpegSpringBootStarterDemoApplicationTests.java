@@ -29,10 +29,29 @@ class FfmpegSpringBootStarterDemoApplicationTests {
      */
     @Test
     void extract() {
-        ffmpegTemplate.extract("D:\\video.mp4","D:\\video.aac");
+        ffmpegTemplate.extract("D:\\video1211.mp4","D:\\video.srt");
     }
     @Test
     void captureVideoFootage() {
         ffmpegTemplate.captureVideoFootage("D:\\video.mp4","D:\\cut.mp4","00:01:01","00:01:12");
     }
+    @Test
+    void scale() {
+        ffmpegTemplate.scale("D:\\video.mp4","D:\\video11.mp4",640,480);
+    }
+    @Test
+    void cut() {
+        ffmpegTemplate.cut("D:\\video.mp4","D:\\video111.mp4",100,100,640,480);
+    }
+
+    @Test
+    void setVideoPreview() {
+        ffmpegTemplate.setVideoPreview("D:\\video.mp4","D:\\video1211.mp4");
+    }
+
+    @Test
+    void embedSubtitle() {
+        ffmpegTemplate.embedSubtitle("D:\\video.mp4","D:\\video1211.mp4","D:\\srt.srt");
+    }
+
 }
