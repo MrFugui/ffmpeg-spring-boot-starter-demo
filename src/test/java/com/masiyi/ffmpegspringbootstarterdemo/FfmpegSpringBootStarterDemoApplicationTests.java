@@ -50,4 +50,8 @@ class FfmpegSpringBootStarterDemoApplicationTests {
         ffmpegTemplate.embedSubtitle("D:\\video.mp4","D:\\video1211.mp4","D:\\srt.srt");
     }
 
+    @Test
+    void merge() {
+        ffmpegTemplate.merge("D:\\mylist.txt","D:\\videoBig.mp4");
+    }
 }
